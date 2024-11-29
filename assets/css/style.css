@@ -33,13 +33,69 @@ nav{
 }
 
 .main-content{
-    background-color: blue;
+    display: grid;
+    grid-template-columns: 65% 31%;
+    column-gap: 4%;
+    row-gap: 7%;
+    grid-template-rows: 58% 35%;
     width: 100%;
     height: 511px;
 }
 
+.background-image{
+ 
+    background-color: blue;
+
+}
+
+.content-text{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    column-gap: 4%;
+    height: 100%; 
+}
+
+.heading{
+    background-color: purple;
+}
+.description-text{
+    background-color: aquamarine;
+}
+
+aside{
+    display: grid;
+    grid-template-columns: 86%;
+    grid-template-rows: 88px 108px 108px 108px;
+    place-self: center stretch;
+    grid-column: 2;
+    grid-row: 1/3;
+}
+.new-title{
+    background-color: blue;
+}
+.hydrogen-box{
+    background-color: gold;
+}
+.downsides-box{
+    background-color: fuchsia;
+}
+
+.funding-box{
+    background-color: wheat;
+}
+
+
 .sub-content{
+
     width: 100%;
     height: 129px;
     background-color: green;
 }
+
+.retro-box{
+    background-color: rgb(156, 104, 8);
+}
+
+.laptops-box
+
+gaming-box
