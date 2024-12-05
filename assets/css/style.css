@@ -1,5 +1,4 @@
 *{
-
     padding: 0;
     border: none;
     margin: 0;
@@ -24,8 +23,47 @@ main{
 nav{
     display: grid;
     grid-template-columns: 20% 80%;
-    place-items: center end;
-    background-color: red;
+    grid-template-rows: 84px;
+    place-items: start center;
+}
+
+.logo-w{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 84px;
+    width: 100%;
+}
+.navigation-menu{
+    /* display: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 1792px;
+    padding: 26.5px 0 26.5px 26.5px;
+    background-color: hsl(36, 100%, 99%);
+    z-index: 9999999; */
+    width: 100%;
+    height: 100%;
+}
+.icon-menu{
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    height: 100%;
+    margin-bottom: 87px;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 216px;
+}
+
+.menu-item{
+    list-style: none;
 }
 
 .main-content{
