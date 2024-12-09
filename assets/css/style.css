@@ -10,6 +10,7 @@ body{
     font-family: "Inter", sans-serif;  
     min-height: 100vh;
     width: 100%;
+    background-color: hsl(36, 100%, 99%); 
 }
 
 p{
@@ -23,7 +24,8 @@ main{
     grid-template-rows: 84px 1193px 515px;
     height: 100%;
     width: 91%;
-    background-color: hsl(36, 100%, 99%); 
+    margin-bottom: 64px;
+    margin-top: 64px;
 }
 
 nav{
@@ -98,25 +100,40 @@ button{
 aside{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 74px 124px 124px 124px;
+    grid-template-rows: 32px 144px 144px 104px;
     margin-top: 68px;
     padding: 32.5px;
     background-color: black;
 }
 
 .new-title{
-    background-color: beige;
-}
-.hydrogen-box{
-    background-color: rgb(220, 245, 239);
-}
-.downsides-box{
-    background-color: red;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.funding-box{
-    background-color: rgb(0, 255, 128);
+h2{
+    font-size: 32px;
+    color:  hsl(35, 77%, 62%);
 }
+
+.aside-content h3 {
+    font-size: 20px;
+    color: hsl(36, 100%, 99%);
+    padding-bottom: 8px;
+}
+.hydrogen-box, .downsides-box, .funding-box{
+    align-self: center;
+} 
+.funding-box{
+    align-self: flex-end;
+} 
+.downsides-box{
+    border-top: 1px solid  hsl(236, 13%, 42%);
+    border-bottom: 1px solid  hsl(236, 13%, 42%);
+    padding: 32px 0 32px 0;
+} 
+
 .sub-content{
     display: grid;
     grid-template-columns: 100%;
@@ -125,14 +142,33 @@ aside{
     padding-top: 64px;
 }
 
-.retro-box{
-    background-color: rgb(0, 255, 128);
+.news-content{
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   flex-direction: column;
+   height: 100%;
+   width: 65%;
 }
-.laptops-box{
-    background-color: red;
+
+.image{
+    width: 30%;
+    height: 100%;
+    padding-right: 5%;
 }
-.gaming-box{
-    background-color: rgb(0, 255, 128);
+
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+.retro-box, .laptops-box, .gaming-box{
+    display: flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    flex-direction: row;
+    height: 100%;
+   
 }
 
 @media only screen and (min-width: 800px) {
