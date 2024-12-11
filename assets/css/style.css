@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    border:none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 63% 16%;
+    row-gap: 8%;
+    min-height: 806px;
+    width: 77%;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 12% 88%;
+    grid-template-rows: 100%;
+    z-index: 6;
+    
+}
+.logo-w{
+    background-image: url(/assets/images/logo.svg);
+    background-repeat: no-repeat;
+    /* background-color:rgba(0, 0, 0, 0.5); */
+
+}
+
+.navigation-menu{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    justify-items: end;
+    align-items: center;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr)
+}
+
+li{
+    list-style: none;
+}
+.main-content{
+    display: grid;
+    grid-template-columns: 65% 31%;
+    grid-template-rows: 58% 35%;
+    gap: 7% 4%;
+   
+}
+
+.background-image{
+   grid-column: 1/2;
+   grid-row: 1;
+   background-image: url(/assets/images/image-web-3-desktop.jpg);
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+
+.content-text{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 4%;
+    grid-column: 1/2;
+    grid-row: 2;
+}
+
+.heading h1{
+    font-size: 56px;
+    color:hsl(240, 100%, 5%);
+    text-align: left;
+}
+
+.description-text{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 57% 26%;
+    gap: 17%;
+    justify-items: start;
+    align-items: start;
+}
+
+p{
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
+}
+
+button {
+    width: 185px;
+    height: 48px;
+    color:hsl(240, 100%, 5%);
+    background-color: hsl(5, 85%, 63%);
+    letter-spacing: 4.38px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+button:hover{
+    color:  hsl(36, 100%, 99%);
+    background-color: hsl(240, 100%, 5%);
+}
+
+aside{
+    display: grid;
+    grid-template-columns: 87%;
+    grid-template-rows: 8% 16% 26% 16%;
+    grid-column: 2;
+    grid-row:1/3;
+    height: 100%;
+    padding: 24px;
+    gap: 34px;
+    background-color: hsl(240, 100%, 5%);
+}
+
+.new-title h2{
+    color: hsl(35, 77%, 62%);
+}
+
+.hydrogen-box  {
+
+}
+
+.downsides-box {
+    padding-top: 24px;
+    border-top: 1px solid hsl(236, 13%, 42%);
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+
+}
+
+h3{
+    font-size: 20px;
+    color: hsl(36, 100%, 99%);
+}
+
+
+
+
+.funding-box {
+
+    }
+
+
+        
