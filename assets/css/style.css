@@ -30,8 +30,6 @@ nav{
     
 }
 .logo-w{
-    background-image: url(/assets/images/logo.svg);
-    background-repeat: no-repeat;
     /* background-color:rgba(0, 0, 0, 0.5); */
 
 }
@@ -54,9 +52,9 @@ li{
 }
 .main-content{
     display: grid;
-    grid-template-columns: 65% 31%;
-    grid-template-rows: 58% 35%;
-    gap: 7% 4%;
+    grid-template-columns: 66% 31.2%;
+    grid-template-rows: 58% 36%;
+    gap: 6% 2.8%;
    
 }
 
@@ -71,15 +69,18 @@ li{
 .content-text{
     display: grid;
     grid-template-columns: 48% 48%;
+    grid-template-rows: 100%;
     gap: 4%;
     grid-column: 1/2;
     grid-row: 2;
 }
 
 .heading h1{
-    font-size: 56px;
+    font-size: 54px;
     color:hsl(240, 100%, 5%);
     text-align: left;
+    height: 100%;
+    font-weight: 900;
 }
 
 .description-text{
@@ -113,42 +114,157 @@ button:hover{
 
 aside{
     display: grid;
-    grid-template-columns: 87%;
-    grid-template-rows: 8% 16% 26% 16%;
+    grid-template-columns: 100%;
+    grid-template-rows: 16% 28% 28% 28%;
     grid-column: 2;
     grid-row:1/3;
     height: 100%;
-    padding: 24px;
-    gap: 34px;
+    justify-items: start;
+    align-items: center;
     background-color: hsl(240, 100%, 5%);
+    padding: 0 32px 0 32px;
 }
 
 .new-title h2{
+    font-size: 40px;
     color: hsl(35, 77%, 62%);
 }
 
-.hydrogen-box  {
-
+.hydrogen-box,.downsides-box, .funding-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
 }
 
 .downsides-box {
-    padding-top: 24px;
     border-top: 1px solid hsl(236, 13%, 42%);
     border-bottom: 1px solid hsl(236, 13%, 42%);
-
 }
 
-h3{
+.aside-heading{
     font-size: 20px;
     color: hsl(36, 100%, 99%);
+    padding-bottom: 8px;
 }
 
+.aside-heading:hover{
+    color: hsl(35, 77%, 62%);
+}
 
+.sub-content{
+    display: grid;
+    grid-template-columns:  31.50% 31.50% 31.50%;
+    grid-template-rows: 100%;
+    gap: 2.8%;
+}
 
+.retro-box,.laptops-box, .gaming-box{
+    display: grid;
+    grid-template-columns: 28% 67%;
+    grid-template-rows: 100%;
+    gap: 5%;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+}
+.news-content{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    justify-items: flex-start;
+    align-items: flex-end;
+}
 
-.funding-box {
+.news-content h2 {
+    font-size: 32px;
+    color: hsl(5, 85%, 63%);
+}
 
+.news-content h3 {
+    font-size: 18px;
+    color: hsl(240, 100%, 5%);
+}
+
+.news-content h3:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+/* MOBILE  */
+
+@media screen and (max-width: 1024px){
+    main{
+        width: 91%;
+        grid-template-rows: 84px 1253px 451px;
+        row-gap: unset;
+        margin-bottom: 64px;
+    }
+    
+    nav{
+        grid-template-columns: 15% 85%;
+        grid-template-rows: 100%; 
+        margin: 28px 0 28px 0;
     }
 
+    .logo-w img{
+       width: 44px;
+       height: 28px;
+    }
 
-        
+    ul{
+        display: none;
+    }
+
+    .navigation-menu{
+        background-image: url(/assets/images/icon-menu.svg);
+        background-repeat: no-repeat;
+        background-size: 15%;
+        background-position: right center;
+    }
+    .main-content{
+        grid-template-columns: 100%;
+        grid-template-rows: 300px 336px 489px;
+        gap: 0;
+        margin-bottom: 64px;
+    }
+    .background-image{
+        background-image: url(/assets/images/image-web-3-mobile.jpg);
+        grid-row: 1;
+        grid-column: unset;
+    }
+    .content-text{
+        grid-template-columns: 100%;
+        grid-template-rows: 148px 188px;
+        gap: unset;
+        grid-row: 2;
+        grid-column: unset;
+    }
+
+    .heading{
+        margin-top: 28px;
+    }
+    
+    .heading h1{
+        font-size: 40px;
+        color:hsl(240, 100%, 5%);
+        line-height: 40px;
+    }
+    
+    .description-text p{
+       padding: 18px 0 18px 0;
+    }
+
+    aside{
+        grid-column: unset;
+        grid-row: 3;
+        margin-top: 64px;
+    }
+
+    .sub-content{
+        grid-template-columns:  100%;
+        grid-template-rows: auto auto auto;
+    }
+    
+}
