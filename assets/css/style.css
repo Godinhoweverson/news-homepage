@@ -38,6 +38,10 @@ nav{
     align-items: center;
 }
 
+.navIcon{
+    display: none;
+}
+
 ul{
     display: grid;
     grid-template-columns: repeat(5, 1fr)
@@ -207,6 +211,14 @@ aside{
     .logo-w img{
        width: 44px;
        height: 28px;
+      
+    }
+
+    .navIcon{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100%;
     }
 
     .nav-desktop{
@@ -219,11 +231,11 @@ aside{
         margin-top: 144px;
     }
 
-    .navigation-menu{
+    /* .navigation-menu{
         background-image: url(/assets/images/icon-menu.svg);
         background-repeat: no-repeat;
         background-position: right center;
-    }
+    } */
     .main-content{
         grid-template-columns: 100%;
         grid-template-rows: 300px 336px 489px;

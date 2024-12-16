@@ -1,40 +1,39 @@
+const navIcon = document.querySelector('.navIcon');
 const navigationMenu = document.querySelector('.navigation-menu');
 const navBar = document.querySelector('nav');
 const logoW = document.querySelector('.logo-w');
 const navDesktop = document.querySelector('.nav-desktop');
 
-const width = window.innerWidth;
-let open;
-if(width < 1024){
-
-  navigationMenu.addEventListener('click', () =>{
-    navBar.style.gridTemplateRows = '1788px';
-    navigationMenu.style.display = 'flex';
-    navigationMenu.style.flexDirection = 'column';
-    navigationMenu.style.justifyContent = 'flex-start';
-    navigationMenu.style.alignContent = 'flex-start';
-    navigationMenu.style.backgroundColor = 'hsl(36, 100%, 99%)';
-    navigationMenu.style.backgroundImage = 'none';
-    navigationMenu.style.backgroundImage = "url('/assets/images/icon-menu-close.svg')";
-    navigationMenu.style.backgroundPosition = 'right top';
-    logoW.style.backgroundColor ='rgba(0, 0, 0, 0.5)';
-    navDesktop.style.display = 'flex';
-    open = true
-  });
-  console.log(open)
-  if(open){
-    navigationMenu.addEventListener('click', () =>{
-      logoW.style.backgroundColor ='';
-      navBar.style.gridTemplateRows = '100%';
-      navigationMenu.style.backgroundImage = "url('/assets/images/icon-menu.svg')";
-      navDesktop.style.display = 'none';
-    })
-  }
-
+navIcon.addEventListener('click', () =>{
+  const openIcon = document.querySelector('.open-icon');
+  console.log(openIcon)
+    if(openIcon){
+      navBar.style.gridTemplateRows = '1880px';
+      navigationMenu.style.display = 'flex';
+      navigationMenu.style.flexDirection = ' column-reverse';
+      navigationMenu.style.justifyContent = 'flex-end';
+      navigationMenu.style.alignContent = 'flex-start';
+      navigationMenu.style.backgroundColor = 'hsl(36, 100%, 99%)';
   
-}
+      navDesktop.style.display = 'flex';
+      
+      openIcon.remove();
+      const img = document.createElement('img');
+        img.setAttribute('class','close-icon');
+        img.src = "assets/images/icon-menu-close.svg";
+        navIcon.appendChild(img);
+  
+      logoW.style.backgroundColor ='rgba(0, 0, 0, 0.5)';
+    }else{
 
-
-
-
-
+      const closeIcon = document.querySelector('.close-icon');
+      navBar.style.gridTemplateRows = '100%';
+      navDesktop.style.display = 'none';
+      closeIcon.remove();
+      const img = document.createElement('img');
+      img.setAttribute('class','open-icon');
+      img.src = "assets/images/icon-menu.svg";
+      navIcon.appendChild(img);
+      logoW.style.backgroundColor ='';
+    }  
+});
