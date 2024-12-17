@@ -19,7 +19,7 @@ navIcon.addEventListener('click', () =>{
       openIcon.remove();
       const img = document.createElement('img');
         img.setAttribute('class','close-icon');
-        img.src = "assets/images/icon-menu-close.svg";
+        img.src = "./assets/images/icon-menu-close.svg";
         navIcon.appendChild(img);
   
       logoW.style.backgroundColor ='rgba(0, 0, 0, 0.5)';
