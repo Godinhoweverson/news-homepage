@@ -62,7 +62,7 @@ li{
 .background-image{
    grid-column: 1/2;
    grid-row: 1;
-   background-image: url(/images/image-web-3-desktop.jpg);
+   background-image: url(../images/image-web-3-desktop.jpg);
    background-repeat: no-repeat;
    background-size: 100%;
 }
@@ -239,7 +239,7 @@ aside{
         margin-bottom: 64px;
     }
     .background-image{
-        background-image: url(/images/image-web-3-mobile.jpg);
+        background-image: url(../images/image-web-3-mobile.jpg);
         grid-row: 1;
         grid-column: unset;
     }
