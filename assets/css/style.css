@@ -11,6 +11,7 @@ body{
     min-height: 100vh;
     width: 100%;
     font-family: "Inter", sans-serif;
+    background-color: hsl(36, 100%, 99%);
 }
 
 main{
@@ -231,11 +232,6 @@ aside{
         margin-top: 144px;
     }
 
-    /* .navigation-menu{
-        background-image: url(/assets/images/icon-menu.svg);
-        background-repeat: no-repeat;
-        background-position: right center;
-    } */
     .main-content{
         grid-template-columns: 100%;
         grid-template-rows: 300px 336px 489px;

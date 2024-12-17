@@ -6,7 +6,6 @@ const navDesktop = document.querySelector('.nav-desktop');
 
 navIcon.addEventListener('click', () =>{
   const openIcon = document.querySelector('.open-icon');
-  console.log(openIcon)
     if(openIcon){
       navBar.style.gridTemplateRows = '1880px';
       navigationMenu.style.display = 'flex';
@@ -37,3 +36,4 @@ navIcon.addEventListener('click', () =>{
       logoW.style.backgroundColor ='';
     }  
 });
+
